@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS zenml;
+
+CREATE USER IF NOT EXISTS 'zenml_user'@'%' IDENTIFIED BY 'zenml_pass';
+
+GRANT ALL PRIVILEGES ON zenml.* TO 'zenml_user'@'%';
+
+FLUSH PRIVILEGES;
+
