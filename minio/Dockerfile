@@ -1,4 +1,5 @@
-FROM quay.io/minio/aistor/minio
+FROM minio/minio
+
 
 
 CMD ["minio", "server", "/data", "--console-address", ":9001"]
